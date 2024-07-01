@@ -1049,11 +1049,12 @@ Service Section End
 }
 
 .project-name h2{
-    font-size: 20px;
+    font-size: 18px;
     font-family: Gilroy_Bold;
 }
 
 .project-name i{
+    margin-left: 10px;
     font-size: 20px;
 }
 
