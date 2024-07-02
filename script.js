@@ -2,7 +2,14 @@
 const body = document.querySelector("body");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu-btn");
-const colseBtn = document.querySelector(".closeBtn");
+const closeBtn = document.querySelector(".closeBtn");
+const navLinks = document.querySelector(".nav-links");
+
+let services = document.querySelector(".services-menu");
+services.addEventListener("click", ()=>{
+  navLinks.classList.toggle("show-services");
+})
+
 
 menu.addEventListener("click" , () =>{
     nav.classList.add("active");
@@ -12,7 +19,7 @@ body.addEventListener("click", e =>{
 
     let clickedElm = e.target;
 
-    if(!clickedElm.classList.contains("menu-btn") && !clickedElm.classList.contains("menu")){
+    if(!clickedElm.classList.contains("menu-btn") && !clickedElm.classList.contains("menu") && !clickedElm.classList.contains("services-menu")){
         nav.classList.remove("active");
     }
 
